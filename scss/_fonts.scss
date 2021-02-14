@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local('Montserrat'), local('Montserrat-Regular'), local('Montserrat Regular'),
+  url('../fonts/Montserrat-Regular.eot'),
+  url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url("../fonts/Montserrat-Regular.woff") format('woff'),
+  url("../fonts/Montserrat-Regular.woff2") format('woff2'),
+  url("../fonts/Montserrat-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: local('Montserrat'), local('Montserrat-Bold'), local('Montserrat Bold'),
+  url("../fonts/Montserrat-Bold.eot"),
+  url("../fonts/Montserrat-Bold.eot#iefix") format('embedded-opentype'),
+  url("../fonts/Montserrat-Bold.woff") format('woff'),
+  url("../fonts/Montserrat-Bold.woff2") format('woff2'),
+  url("../fonts/Montserrat-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Adobe Garamond Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: local('Adobe Garamond Pro'), local('Adobe Garamond Pro Bold'),
+  url("../fonts/AGaramondPro-Bold.eot"),
+  url("../fonts/AGaramondPro-Bold.eot#iefix") format('embedded-opentype'),
+  url("../fonts/AGaramondPro-Bold.woff") format('woff'),
+  url("../fonts/AGaramondPro-Bold.woff2") format('woff2'),
+  url("../fonts/AGaramondPro-Bold.ttf") format('truetype');
+}

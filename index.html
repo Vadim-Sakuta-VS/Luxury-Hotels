@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxury Hotels</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__top">
+                <a href="#" class="logo-link header__logo-link">
+                    <img src="images/logo.svg" alt="logo" class="logo-link__img header__logo-link-img">
+                </a>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menu__item"><a href="#" class="menu-link">Facilities</a></li>
+                        <li class="menu__item"><a href="#" class="menu-link">Rooms</a></li>
+                        <li class="menu__item"><a href="#" class="menu-link">Contact-us</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger-toggle">
+                    <span class="hamburger-toggle__el"></span>
+                    <span class="hamburger-toggle__el"></span>
+                    <span class="hamburger-toggle__el"></span>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <p class="header__greeting">Welcome to</p>
+                <h1 class="main-title-first">Luxury</h1>
+                <h2 class="main-title-second">Hotels</h2>
+                <p class="header__description">
+                    Book your stay and enjoy Luxury redefined at the most affordable rates.
+                </p>
+                <div class="header__bottom-btn-wrap">
+                    <button class="btn btn-w-icon">
+                        <svg>
+                            <use xlink:href="images/sprite.svg#booking"></use>
+                        </svg>
+                        <span>Book now</span>
+                    </button>
+                </div>
+                <div class="header__bottom-link-wrap">
+                    <a href="#" class="scroll-link">
+                        <span>Scroll</span>
+                        <svg>
+                            <use xlink:href="images/sprite.svg#scroll"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
