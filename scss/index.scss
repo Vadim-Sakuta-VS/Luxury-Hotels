@@ -429,3 +429,159 @@ button {
     @include font(null, 2.5rem, null, bold);
   }
 }
+
+.exploring {
+  padding-top: 83px;
+
+  &__description {
+    margin-bottom: 93px;
+    @include font(null, 3.6rem, null, null);
+    text-align: center;
+  }
+
+  &-items__item:not(:last-child) {
+    margin-bottom: 69px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__col:first-child {
+      position: relative;
+      flex-basis: 542px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -48px;
+        @include size(2px, 100%);
+        background-color: $color-base;
+      }
+    }
+
+    &__col:last-child {
+      position: relative;
+      flex-basis: 866px;
+      margin-left: 110px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: transparentize($color-base, .8);
+      }
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      @include font($ff-secondary, 6rem, null, null);
+      letter-spacing: 0.02em;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      @include font(null, 2.5rem, 1.6, null);
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .exploring {
+    padding-top: 53px;
+
+    &__description {
+      margin-bottom: 63px;
+    }
+
+    &-items__item:not(:last-child) {
+      margin-bottom: 59px;
+    }
+
+    &-item {
+      &__col:last-child {
+        margin-left: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .exploring {
+    &-item {
+      flex-direction: column;
+
+      &__col:nth-child(n){
+        flex-basis: auto;
+      }
+
+      &__col:first-child {
+        margin-bottom: 20px;
+      }
+
+      &__col:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .exploring {
+    padding-top: 23px;
+
+    &__description {
+      margin-bottom: 33px;
+    }
+
+    &-items__item:not(:last-child) {
+      margin-bottom: 39px;
+    }
+
+    &-item {
+      &__col:first-child {
+        &::before {
+          left: -20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .exploring {
+    &-item {
+      &__col:first-child {
+        &::before {
+          left: -10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .exploring {
+    &-item {
+      &__title {
+        margin-bottom: 15px;
+        @include font($ff-secondary, 6rem, null, null);
+        letter-spacing: 0.02em;
+      }
+
+      &__text {
+        margin-bottom: 20px;
+        @include font(null, 2.5rem, 1.6, null);
+      }
+    }
+  }
+}
