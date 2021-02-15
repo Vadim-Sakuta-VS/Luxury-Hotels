@@ -1,0 +1,129 @@
+@import "fonts";
+@import "normalize";
+
+$ff-base: Montserrat, sans-serif;
+$ff-secondary: 'Adobe Garamond Pro', sans-serif;
+$fs-base: 10px;
+$color-base: #14274a;
+$color-secondary: #fff;
+$color-tertiary: #e0b973;
+
+@mixin size($w, $s) {
+  width: $w;
+  height: $s;
+}
+
+@mixin font($ff, $fs, $lh, $fw) {
+  font-family: $ff;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $fs-base;
+}
+
+body {
+  font-family: $ff-base;
+  color: $color-base;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 78%;
+  margin: 0 auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.btn {
+  padding: 0.95em 3.3em;
+  @include font(null, 2rem, null, bold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 12px;
+  color: $color-secondary;
+  background-color: $color-tertiary;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $color-tertiary;
+  }
+}
+
+.btn-w-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 1.1em 1.6em 1.35em 1.6em;
+
+  svg {
+    @include size(28px, 26px);
+    margin-right: 18px;
+    fill: $color-secondary;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  html {
+    font-size: 6px;
+  }
+
+  .btn-w-icon {
+    svg {
+      @include size(20px, 22px);
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 4px;
+  }
+
+  .btn {
+    @include font(null, 2.5rem, null, bold);
+  }
+}
