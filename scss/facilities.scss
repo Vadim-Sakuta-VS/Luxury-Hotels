@@ -1,0 +1,134 @@
+@import "base";
+@import "header";
+@import "testimonials";
+@import "footer";
+
+.header {
+  background-image: url("../images/facilities-bg.png");
+}
+
+.facilities {
+  padding-top: 82px;
+
+  &__title {
+    margin-bottom: 34px;
+    @include font($ff-secondary, 6rem, null, bold);
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-bottom: 82px;
+    @include font(null, 2.5rem, null, null);
+    text-align: center;
+  }
+
+  &-items__item:not(:last-child) {
+    margin-bottom: 186px;
+  }
+
+  &-item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: transparentize($color-base, .7);
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46%;
+      padding-top: 16px;
+      @include font(null, 4.8rem, null, bold);
+      text-align: center;
+      text-transform: uppercase;
+      background-color: $color-secondary;
+    }
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .facilities {
+    &-items__item:not(:last-child) {
+      margin-bottom: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .facilities {
+    &__description {
+      margin-bottom: 52px;
+    }
+
+    &-items__item:not(:last-child) {
+      margin-bottom: 136px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .facilities {
+    padding-top: 50px;
+
+    &__description {
+      margin-bottom: 52px;
+    }
+
+    &-items__item:not(:last-child) {
+      margin-bottom: 86px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .facilities {
+    &-item {
+      &__title {
+        width: 76%;
+        padding-top: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .facilities {
+    &__title {
+      margin-bottom: 14px;
+    }
+
+    &__description {
+      margin-bottom: 32px;
+    }
+
+    &-items__item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .facilities {
+    padding-top: 30px;
+
+    &-item {
+      &__title {
+        padding-top: 8px;
+      }
+    }
+  }
+}
