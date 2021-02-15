@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Luxury Hotels</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -92,8 +93,44 @@
                 </div>
             </div>
         </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="testimonials__title">Testimonials</h2>
+                <div class="swiper-container testimonials__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonials__item swiper-slide">
+                            <p class="testimonials__item-text">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+                            <p class="testimonials__item-author">Mr. and Mrs. Baxter, UK (1)</p>
+                        </div>
+                        <div class="testimonials__item swiper-slide">
+                            <p class="testimonials__item-text">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+                            <p class="testimonials__item-author">Mr. and Mrs. Baxter, UK (2)</p>
+                        </div>
+                        <div class="testimonials__item swiper-slide">
+                            <p class="testimonials__item-text">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+                            <p class="testimonials__item-author">Mr. and Mrs. Baxter, UK (3)</p>
+                        </div>
+                        <div class="testimonials__item swiper-slide">
+                            <p class="testimonials__item-text">"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+                            <p class="testimonials__item-author">Mr. and Mrs. Baxter, UK (4)</p>
+                        </div>
+                    </div>
+                    <button class="btn testimonials__swiper-btn swiper-button-prev">
+                        <svg>
+                            <use xlink:href="images/sprite.svg#arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="btn testimonials__swiper-btn swiper-button-next">
+                        <svg>
+                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
