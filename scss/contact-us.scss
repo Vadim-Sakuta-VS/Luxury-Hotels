@@ -1,0 +1,240 @@
+@import "base";
+@import "header";
+@import "footer";
+
+.header {
+  background: $color-base;
+
+  &__container {
+    min-height: auto;
+  }
+
+  &__top {
+    margin-bottom: 47px;
+  }
+
+  &__bottom {
+    padding-bottom: 171px;
+  }
+
+  .main-title {
+    @include font(null, 8rem, null, bold);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.contact-us {
+  padding: 260px 0 500px 0;
+
+  &__title {
+    margin-bottom: 6px;
+    @include font($ff-secondary, 6rem, null, bold);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-bottom: 167px;
+    @include font(null, 3rem, null, null);
+  }
+
+  &__cols {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col:first-child {
+    flex-basis: 43%;
+    margin-right: 40px;
+    @include font(null, 4rem, null, null);
+  }
+
+  &__col:last-child {
+    flex-basis: 38%;
+  }
+
+  &__address {
+    max-width: 78%;
+    margin-bottom: 28px;
+    @include font(null, 4rem, null, null);
+  }
+
+  &__link-map {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 54px;
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-base;
+
+    &:hover svg {
+      transform: translateX(10%);
+    }
+
+    svg {
+      margin-left: 30px;
+      @include size(84px, 38px);
+      fill: $color-base;
+      transition: .3s;
+    }
+  }
+}
+
+.form-contact {
+  @include font(null, 2.5rem, null, null);
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 10px;
+    margin-bottom: 30px;
+    @include font(null, 4rem, null, null);
+    border: 2px solid transparentize($color-base, .5);
+    color: $color-base;
+    transition: .3s;
+
+    &:last-child {
+      margin-bottom: 52px;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $color-base;
+    }
+  }
+
+  &__textarea {
+    height: 352px;
+    resize: none;
+  }
+
+  &__btn-wrap {
+    text-align: right;
+  }
+
+  &__btn-submit {
+    padding: 25px;
+    font-size: inherit;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .contact-us {
+    padding: 160px 0 300px 0;
+
+    &__description {
+      margin-bottom: 100px;
+    }
+  }
+
+  .form-contact {
+    &__input {
+      padding: 15px 10px;
+    }
+
+    &__textarea {
+      height: 330px;
+    }
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .contact-us {
+    padding: 100px 0 200px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-us {
+    padding: 100px 0 200px 0;
+
+    &__description {
+      margin-bottom: 60px;
+    }
+
+    &__link-map {
+      margin-bottom: 30px;
+    }
+
+    &__cols {
+      flex-direction: column;
+    }
+
+    &__col:first-child {
+      margin: 0 0 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    &__bottom {
+      padding-bottom: 120px;
+    }
+  }
+
+  .contact-us {
+    padding: 60px 0 100px 0;
+
+    &__description {
+      margin-bottom: 30px;
+    }
+
+    &__address, &__link-map {
+      margin-bottom: 15px;
+    }
+
+    &__link-map {
+      svg {
+        margin-left: 20px;
+        @include size(54px, 28px);
+      }
+    }
+
+    &__col:first-child {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .form-contact {
+    &__input {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 52px;
+      }
+    }
+
+    &__textarea {
+      height: 252px;
+    }
+
+    &__btn-submit {
+      padding: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .contact-us {
+    padding: 40px 0 80px 0;
+
+    &__link-map {
+      svg {
+        margin-left: 15px;
+        @include size(44px, 20px);
+      }
+    }
+  }
+
+  .form-contact {
+    &__textarea {
+      height: 200px;
+    }
+  }
+}

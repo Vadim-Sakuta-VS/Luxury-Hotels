@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxury Hotels</title>
+    <link rel="stylesheet" href="../css/contact-us.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__container">
+        <div class="header__top">
+            <a href="#" class="logo-link header__logo-link">
+                <img src="../images/logo.svg" alt="logo" class="logo-link__img header__logo-link-img">
+            </a>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu-link">Facilities</a></li>
+                    <li class="menu__item"><a href="#" class="menu-link">Rooms</a></li>
+                    <li class="menu__item"><a href="#" class="menu-link">Contact-us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-toggle">
+                <span class="hamburger-toggle__el"></span>
+                <span class="hamburger-toggle__el"></span>
+                <span class="hamburger-toggle__el"></span>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <h1 class="main-title">Contact-us</h1>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <section class="contact-us">
+            <h2 class="contact-us__title">We are here for you</h2>
+            <p class="contact-us__description">
+                At Luxury Hotels, we take our customers seriously. Do you have any enquiries, compaints or requests,
+                please forward it to our support desk and we will get back to you as soon as possible.
+            </p>
+            <div class="contact-us__cols">
+                <div class="contact-us__col">
+                    <p class="contact-us__address">497 Evergreen Rd. Roseville, CA 95673</p>
+                    <a href="#" class="contact-us__link-map">
+                        <span>View map</span>
+                        <svg>
+                            <use xlink:href="../images/sprite.svg#arrow-right-long"></use>
+                        </svg>
+                    </a>
+                    <p class="contact-us__phone">Phone: +44 345 678 903</p>
+                    <p class="contact-us__email">Email: luxury_hotels@gmail.com</p>
+                </div>
+                <div class="contact-us__col">
+                    <form action="#" class="form-contact">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-contact__input">
+                        <label for="email-contact">Email Address</label>
+                        <input type="email" name="email" id="email-contact" class="form-contact__input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="form-contact__input form-contact__textarea"></textarea>
+                        <div class="form-contact__btn-wrap">
+                            <button class="btn form-contact__btn-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__col">
+            <img src="../images/footer-logo.svg" alt="logo" class="footer__logo-img">
+            <div class="footer__contacts">
+                <p class="footer__contacts-address">497 Evergreen Rd. Roseville, CA 95673</p>
+                <p class="footer__contacts-phone">+44 345 678 903</p>
+                <p class="footer__contacts-email">luxury_hotels@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer__col">
+            <ul class="footer__links">
+                <li class="footer__links-item"><a href="#" class="footer__link">About Us</a></li>
+                <li class="footer__links-item"><a href="#" class="footer__link">Contact</a></li>
+                <li class="footer__links-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <ul class="socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg class="socials__link-icon-facebook">
+                            <use xlink:href="../images/sprite.svg#facebook"></use>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg class="socials__link-icon-twitter">
+                            <use xlink:href="../images/sprite.svg#twitter"></use>
+                        </svg>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <svg class="socials__link-icon-instagram">
+                            <use xlink:href="../images/sprite.svg#instagram"></use>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <form action="#" class="form-subscribe">
+                <p class="form-subscribe__description">Subscribe to our news letter</p>
+                <div class="form-subscribe__controls">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" class="form-subscribe__input" placeholder="Email Address">
+                    <button class="btn form-subscribe__btn-submit">ok</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
