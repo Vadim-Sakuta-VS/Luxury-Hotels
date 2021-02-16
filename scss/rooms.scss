@@ -1,0 +1,262 @@
+@import "base";
+@import "header";
+@import "testimonials";
+@import "footer";
+
+.header {
+  background-image: url("../images/rooms-bg.png");
+}
+
+.rooms {
+  padding-top: 82px;
+
+  &__title {
+    margin-bottom: 34px;
+    @include font($ff-secondary, 6rem, null, bold);
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    width: 87%;
+    margin: 0 auto 82px auto;
+    @include font(null, 2.5rem, null, null);
+    text-align: center;
+  }
+
+  &-items__item:not(:last-child) {
+    margin-bottom: 81px;
+  }
+
+  &-item {
+    &__slide {
+      cursor: grab;
+
+      &-img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &__title {
+      padding: 41px 0;
+      @include font(null, 6rem, null, bold);
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-secondary;
+      background-color: $color-base;
+    }
+
+    &__inner-wrap {
+      padding: 78px 0;
+      border: 2px solid $color-base;
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+    }
+
+    &__inner {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__link-details {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+      text-decoration: none;
+
+      &:hover &-icon {
+        box-shadow: 0 0 10px 0 $color-tertiary;
+      }
+
+      &-icon {
+        position: relative;
+        @include size(51px, 51px);
+        border-radius: 50%;
+        background-color: $color-tertiary;
+        transition: .3s;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 30px;
+          height: 3px;
+          background-color: $color-secondary;
+        }
+
+        &::after {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+
+      &-text {
+        margin-left: 40px;
+        @include font(null, 2.5rem, null, bold);
+        text-transform: uppercase;
+        color: $color-base;
+      }
+    }
+
+    &__btn-price {
+      padding: 24px 44px;
+      text-transform: none;
+    }
+  }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 35px;
+}
+
+.swiper-pagination-bullet {
+  @include size(20px, 20px);
+  border: 2px solid $color-secondary;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+  transition: .3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-secondary;
+}
+
+@media screen and (max-width: 1919px) {
+  .rooms {
+    &-item {
+      &__title {
+        padding: 25px 0;
+      }
+
+      &__inner-wrap {
+        padding: 48px 0;
+      }
+
+      &__link-details {
+        &-icon {
+          @include size(38px, 38px);
+
+          &::before, &::after {
+            width: 20px;
+          }
+        }
+
+        &-text {
+          margin-left: 20px;
+        }
+      }
+
+      &__btn-price {
+        padding: 15px 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .rooms {
+    &-items__item:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rooms {
+    &-item {
+      &__title {
+        padding: 15px 0;
+      }
+
+      &__inner-wrap {
+        padding: 28px 0;
+      }
+    }
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .rooms {
+    &-item {
+      &__inner {
+        flex-direction: column;
+      }
+
+      &__link-details {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .rooms {
+    &__title {
+      margin-bottom: 14px;
+    }
+
+    &__description {
+      margin-bottom: 32px;
+    }
+
+    &-items__item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    &-item {
+      &__title {
+        padding: 10px 0;
+      }
+
+      &__inner-wrap {
+        padding: 18px 0;
+      }
+
+      &__link-details {
+        &-icon {
+          @include size(28px, 28px);
+
+          &::before, &::after {
+            width: 14px;
+            height: 2px;
+          }
+        }
+
+        &-text {
+          margin-left: 10px;
+        }
+      }
+
+      &__btn-price {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .rooms {
+    padding-top: 30px;
+
+    &-items__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .swiper-pagination-bullet {
+    @include size(15px, 15px);
+  }
+}

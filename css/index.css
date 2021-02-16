@@ -1017,15 +1017,15 @@ button {
   font-size: 6rem;
   text-align: center;
 }
-.testimonials__swiper {
+.testimonials-swiper {
   max-width: 798px;
   margin: 0 auto;
   text-align: center;
 }
-.testimonials__swiper .swiper-wrapper {
+.testimonials-swiper .swiper-wrapper {
   margin-bottom: 23px;
 }
-.testimonials__swiper-btn {
+.testimonials-swiper__btn {
   position: static;
   width: auto;
   height: auto;
@@ -1034,16 +1034,16 @@ button {
   margin-top: 0;
   font-size: 16px;
 }
-.testimonials__swiper-btn::after {
+.testimonials-swiper__btn::after {
   content: '';
   font-size: inherit;
 }
-.testimonials__swiper-btn svg {
+.testimonials-swiper__btn svg {
   width: 19px;
   height: 13px;
   fill: #fff;
 }
-.testimonials__swiper-btn:nth-child(3) {
+.testimonials-swiper__btn:nth-child(3) {
   margin-left: 21px;
 }
 .testimonials__item-text {

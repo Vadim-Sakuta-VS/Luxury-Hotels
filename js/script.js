@@ -9,7 +9,7 @@ function toggleMenu() {
     document.body.classList.toggle('overflow-hidden');
 }
 
-let swiper = new Swiper('.swiper-container', {
+let swiper = new Swiper('.testimonials-swiper', {
     loop: true,
     allowTouchMove: true,
     navigation: {
@@ -21,4 +21,12 @@ let swiper = new Swiper('.swiper-container', {
             allowTouchMove: false,
         }
     }
+});
+
+let swiperRooms = new Swiper('.rooms-item-swiper', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 });

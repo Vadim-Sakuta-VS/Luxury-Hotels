@@ -7,7 +7,7 @@
     text-align: center;
   }
 
-  &__swiper {
+  &-swiper {
     max-width: 798px;
     margin: 0 auto;
     text-align: center;
@@ -16,7 +16,7 @@
       margin-bottom: 23px;
     }
 
-    &-btn {
+    &__btn {
       position: static;
       width: auto;
       height: auto;
