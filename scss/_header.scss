@@ -46,7 +46,7 @@
 
 .header {
   position: relative;
-  background: no-repeat center center / cover url("../images/header-index-bg.png");
+  background: no-repeat center center / cover;
   color: $color-secondary;
 
   &::before {
@@ -133,6 +133,10 @@
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: .3s;
+
+    &--active {
+      border-color: $color-secondary;
+    }
 
     &:hover {
       border-color: $color-secondary;

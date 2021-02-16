@@ -368,6 +368,7 @@ template {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -526,7 +527,7 @@ button {
 
 .header {
   position: relative;
-  background: no-repeat center center/cover url("../images/header-index-bg.png");
+  background: no-repeat center center / cover;
   color: #fff;
 }
 .header::before {
@@ -619,6 +620,9 @@ button {
   border-bottom: 2px solid transparent;
   -webkit-transition: .3s;
   transition: .3s;
+}
+.menu-link--active {
+  border-color: #fff;
 }
 .menu-link:hover {
   border-color: #fff;
@@ -899,9 +903,7 @@ button {
   padding-left: 5%;
   font-size: inherit;
   border: 2px solid #e0b973;
-  border-radius: 5px;
-  border-top-right-radius: 2px;
-  border-botom-right-radius: 2px;
+  border-radius: 5px 2px 2px 5px;
   color: #fff;
   background-color: transparent;
   -webkit-transition: .3s;
@@ -929,9 +931,7 @@ button {
   padding: 16px 0;
   color: #14274a;
   font-size: inherit;
-  border-radius: 5px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-radius: 2px 5px 5px 2px;
 }
 
 @media screen and (max-width: 1317px) {
